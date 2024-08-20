@@ -6,7 +6,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 const Hero = () => {
 
     const StyledHero = styled("div")(({ theme }) => ({
-        backgroundColor: theme.palette.primary.main,
+        backgroundColor: theme.palette.primary.dark,
         height: "100vh",
         display: "flex",
         alignItems: "center",
@@ -43,15 +43,15 @@ const Hero = () => {
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
                                
                                         <DownloadIcon />
-                                        <Typography>
+                                        <Typography color="primary.contrastText">
                                             Download CV
-                                        </Typography>
+                                        </Typography >
                
                                 </Grid>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
                                 
                                         <MailOutlineIcon />
-                                        <Typography>
+                                        <Typography color="primary.contrastText">
                                             Contact me
                                         </Typography>
                
