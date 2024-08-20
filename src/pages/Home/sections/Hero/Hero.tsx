@@ -1,5 +1,7 @@
-import { Box, Container, Grid, Typography, Button, styled } from "@mui/material";
-import Avatar from "../../../../assets/images/avatar.jpg";
+import { Box, Container, Grid, Typography, styled } from "@mui/material"
+import Avatar from "../../../../assets/images/avatar.jpg"
+import DownloadIcon from '@mui/icons-material/Download';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 const Hero = () => {
 
@@ -14,13 +16,13 @@ const Hero = () => {
         [theme.breakpoints.up('md')]: { // >=mobile
             paddingTop: "0",
         }
-    }));
+    }))
 
     const StyledImg = styled("img")(({ theme }) => ({
         width: "75%",
         borderRadius: "50%",
         border: `1px solid ${theme.palette.primary.contrastText}`
-    }));
+    }))
 
     return (
         <>
@@ -36,17 +38,23 @@ const Hero = () => {
                         </Grid>
                         <Grid item xs={12} md={7}>
                             <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Matheus Sena</Typography>
-                            <Typography color="primary.contrastText" variant="h2" textAlign="center">I'm a Software Engineer</Typography>
+                            <Typography color="primary.contrastText" variant="h2" textAlign="center" >I'm a Software Engineer</Typography>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                    <Button variant="contained" color="secondary">
-                                        Download CV
-                                    </Button>
+                               
+                                        <DownloadIcon />
+                                        <Typography>
+                                            Download CV
+                                        </Typography>
+               
                                 </Grid>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                    <Button variant="contained" color="secondary">
-                                        Contact me
-                                    </Button>
+                                
+                                        <MailOutlineIcon />
+                                        <Typography>
+                                            Contact me
+                                        </Typography>
+               
                                 </Grid>
                             </Grid>
                         </Grid>
@@ -54,7 +62,7 @@ const Hero = () => {
                 </Container>
             </StyledHero>
         </>
-    );
+    )
 }
 
-export default Hero;
+export default Hero
