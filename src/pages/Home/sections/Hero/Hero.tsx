@@ -2,16 +2,18 @@ import { Box, Container, Grid, Typography, styled } from "@mui/material"
 import Avatar from "../../../../assets/images/avatar.jpg"
 import DownloadIcon from '@mui/icons-material/Download';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import StyledButton from "../../../../components/StyledButton/StyledButton";
 
 const Hero = () => {
 
     const StyledHero = styled("div")(({ theme }) => ({
-        backgroundColor: theme.palette.primary.dark,
+        backgroundColor: theme.palette.primary.main,
         height: "100vh",
         display: "flex",
         alignItems: "center",
         [theme.breakpoints.up('xs')]: { // <= mobile
             paddingTop: "100px",
+
         },
         [theme.breakpoints.up('md')]: { // >=mobile
             paddingTop: "0",
@@ -31,6 +33,8 @@ const Hero = () => {
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={5}>
                             <Box position="relative">
+                                <Box position="absolute" width={"150%"} top={-100} right={0}>
+                                </Box>
                                 <Box position="relative" textAlign="center">
                                     <StyledImg src={Avatar} />
                                 </Box>
@@ -41,20 +45,20 @@ const Hero = () => {
                             <Typography color="primary.contrastText" variant="h2" textAlign="center" >I'm a Software Engineer</Typography>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                               
+                                    <StyledButton>
                                         <DownloadIcon />
-                                        <Typography color="primary.contrastText">
+                                        <Typography>
                                             Download CV
-                                        </Typography >
-               
+                                        </Typography>
+                                    </StyledButton>
                                 </Grid>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                
+                                    <StyledButton>
                                         <MailOutlineIcon />
-                                        <Typography color="primary.contrastText">
+                                        <Typography>
                                             Contact me
                                         </Typography>
-               
+                                    </StyledButton>
                                 </Grid>
                             </Grid>
                         </Grid>
