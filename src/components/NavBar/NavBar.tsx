@@ -1,23 +1,21 @@
 import { AppBar, MenuItem, Toolbar, styled } from "@mui/material"
 
-
 const NavBar = () => {
-    const StyledToobar = styled(Toolbar)(() => ({
+    const StyledToolbar = styled(Toolbar)(() => ({
         display: "flex",
         justifyContent: "space-evenly"
-    }))
+    }));
 
     return (
-        <>
-            <AppBar position="absolute">
-                <StyledToobar>
-                    <MenuItem>About</MenuItem>
-                    <MenuItem>Skills</MenuItem>
-                    <MenuItem>Projects</MenuItem>
-                </StyledToobar>
-            </AppBar>
-        </>
-    )
+        <AppBar position="fixed">
+            <StyledToolbar>
+                <MenuItem component="a" href="#about">About</MenuItem>
+                <MenuItem component="a" href="#skills">Skills</MenuItem>
+                <MenuItem component="a" href="#projects">Projects</MenuItem>
+            </StyledToolbar>
+        </AppBar>
+    );
 }
+
 
 export default NavBar

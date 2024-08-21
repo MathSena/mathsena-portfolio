@@ -13,12 +13,7 @@ let theme = createTheme({
         fontFamily: [
             '-apple-system',
             'BlinkMacSystemFont',
-            '"Helvetica Neue"',
-            'Arial',
-            'sans-serif',
-            '"Apple Color Emoji"',
-            '"Segoe UI Emoji"',
-            '"Segoe UI Symbol"',
+            '"Apple Color Emoji"'
         ].join(','),
     }
 });
