@@ -21,7 +21,7 @@ const skills = [
 
 const Skills = () => {
     return (
-        <Box py={8} id="skills" bgcolor="primary.main" color="primary.contrastText" data-aos="fade-up">
+        <Box py={8} id="skills" bgcolor="primary.main" color="primary.contrastText" data-aos="fade-left">
             <Container maxWidth="lg">
                 <Typography variant="h4" gutterBottom>Skills</Typography>
                 <Grid container spacing={2}>

@@ -10,7 +10,7 @@ const FadeInComponent = () => {
     }, []);
 
     return (
-        <div data-aos="fade-up">
+        <div data-aos="fade-left">
             Este conteúdo vai fazer fade-in ao rolar para ele.
         </div>
     );

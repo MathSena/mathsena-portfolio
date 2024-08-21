@@ -4,7 +4,7 @@ import StyledButton from "../StyledButton/StyledButton";
 
 const About = () => {
     return (
-        <Box py={8} id="about" bgcolor="background.paper" color="text.primary" data-aos="fade-up">
+        <Box py={8} id="about" bgcolor="background.paper" color="text.primary" data-aos="fade-left">
             <Container maxWidth="lg">
                 <Grid container spacing={4} alignItems="center">
                     <Grid item xs={12} md={6}>

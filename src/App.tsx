@@ -7,13 +7,17 @@ import { Home } from './pages/Home/Home';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
+import Experience from './components/Experience/Experiences';
+import Education from './components/Education/Education';
 
 function App() {
     useEffect(() => {
         AOS.init({
             // Você pode adicionar opções aqui, como delay, duration, etc.
-            duration: 800,
+            duration: 800, // Duração da animação
             once: true, // Anima apenas uma vez ao entrar na visão
+            delay: 50, // Delay inicial para as animações
+            easing: 'ease-in-out', // Tipo de "ease" para as animações
         });
     }, []);
 
@@ -23,6 +27,8 @@ function App() {
             <Home />
             <About />
             <Skills />
+            <Experience />
+            <Education />
             <Projects />
             <Footer />
         </>
