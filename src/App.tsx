@@ -7,7 +7,7 @@ import { Home } from './pages/Home/Home';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
-import Experience from './components/Experience/Experiences';
+import Experience from './components/Experience/Experience';
 import Education from './components/Education/Education';
 
 function App() {
