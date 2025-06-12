@@ -1,5 +1,5 @@
 import { Box, Container, Typography, Grid, Paper, List, ListItem, ListItemText, useTheme } from "@mui/material";
-import { FaJava, FaAws, FaNodeJs } from 'react-icons/fa';
+import { FaJava } from 'react-icons/fa';
 import { SiSpring, SiGitlab, SiJira, SiTypescript, SiAngular, SiReact, SiPostgresql, SiMongodb, SiPython, SiDocker, SiKubernetes } from 'react-icons/si';
 
 const experiences = [
