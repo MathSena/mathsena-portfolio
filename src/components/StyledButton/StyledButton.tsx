@@ -5,9 +5,7 @@ interface StyledButtonProps {
     children: ReactNode;
 }
 
-const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
-    // Define the button style outside the component function to avoid re-creating the styled component on each render
-    const CustomButton = styled("button")(({ theme }) => ({
+const CustomButton = styled("button")(({ theme }) => ({
         backgroundColor: "transparent",
         border: `1px solid ${theme.palette.primary.contrastText}`,
         borderRadius: "8px", // Slightly increased for better aesthetics
@@ -28,6 +26,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
         }
     }));
 
+const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
     return (
         <CustomButton>
             {children}
